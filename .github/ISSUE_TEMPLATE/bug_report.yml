@@ -1,0 +1,61 @@
+name: Bug report
+description: Create a report to help us improve!
+title: '[Bug]: '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This repository is for reporting bugs with the ImageKit DAM app, which we respond to on a best-effort basis.
+  - type: input
+    id: version
+    attributes:
+      label: App Version
+      description: >-
+        Right click on the app icon in the system tray and select "About" to get
+        the version number
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: >-
+        The platform you're using the app on. Please include the chipset for Mac
+        devices.
+      placeholder: E.g. "Windows 11" or "MacOS Sonoma 14.4.1 - Apple M1 Chip"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please give a clear and concise description of the bug
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduce
+      description: Steps to reproduce the bug
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behaviour
+      description: What is the expected behavior?
+      placeholder: >-
+        E.g. "It should open the profile page on ImageKit Dashboard in my
+        browser"
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Info
+      description: >-
+        Additional info you want to provide such as logs, system info,
+        environment, etc.
